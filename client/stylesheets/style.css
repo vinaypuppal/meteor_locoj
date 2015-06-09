@@ -482,3 +482,26 @@ main{
 .clear{
   clear: both;
 }
+
+/*------------sidbebar right-----------*/
+.sidebar.right{
+  top:60px;
+  right: 0;
+  width:315px;
+}
+
+.sidebar.right .panel-default .panel-body{
+  width: 100%;
+  height:300px;
+  padding: 0;
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+.sidebar.right .panel-default .panel-footer{
+  background-color: #2879fe;
+  height: 50px;
+  padding: 10px;
+  color: white;
+}

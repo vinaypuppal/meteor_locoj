@@ -10,3 +10,10 @@ insecure
 iron:router
 twbs:bootstrap
 fortawesome:fontawesome
+mirrorcell:geolocation-plus
+dburles:google-maps
+accounts-password
+accounts-base
+email
+yogiben:pretty-email
+jaymc:google-reverse-geocode
