@@ -1,0 +1,15 @@
+<template name="feedsRightSidebar">
+	<aside class="sidebar right animated bounce">
+		<div class="panel panel-default animated fadeIn">
+			<div class="panel-heading"><h3 class="panel-title">Current Location</h3></div>
+		  <div class="panel-body">
+		    <div class="map-container">
+		        {{> googleMap name="exampleMap" options=exampleMapOptions}}
+		      </div>
+		  </div>
+		  <div class="panel-footer" id="location-info">
+		  	<img class="pull-right" src="images/powered-by-google-on-non-white.png" height="16" width="104" alt="powered by google">
+		  </div>
+		</div>
+	</aside> 
+</template>

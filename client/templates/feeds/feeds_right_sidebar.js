@@ -1,4 +1,4 @@
-Template.feedsList.helpers({
+Template.feedsRightSidebar.helpers({
   exampleMapOptions: function() {
     // Make sure the maps API has loaded
     if (GoogleMaps.loaded()) {
@@ -16,7 +16,7 @@ Template.feedsList.helpers({
 });
 
 
-Template.feedsList.onCreated(function() {
+Template.feedsRightSidebar.onCreated(function() {
   // We can use the `ready` callback to interact with the map API once the map is ready.
   GoogleMaps.ready('exampleMap', function(map) {
     // Add a marker to the map once it's ready
@@ -31,8 +31,12 @@ Template.feedsList.onCreated(function() {
         //or you can now access it from reverseGeocode object
         Session.set('location', reverseGeocode.getAddrStr());
     });
+    console.log(Session.get('location'));
     var infowindow = new google.maps.InfoWindow();
-    infowindow.setContent(Session.get('location'));
+    var address;
+    if(Session.get('location')){address = Session.get('location');}
+    else{ address='No address Found'; }
+    infowindow.setContent(address);
     infowindow.open(map, marker);
   });
 });

@@ -5,6 +5,6 @@ Meteor.startup(function() {
 			lng = pos.longitude;
 			}, function(err){
 			   console.log("Oops! There was an error", err);
-			});			
+			});		
     });
 

@@ -1,0 +1,19 @@
+<template name="commentsList">
+	<div class="view-all-comments">
+		<a href="">
+			<i class="fa fa-comment fa-lg"></i> view all
+		</a>
+		10 comments
+	</div>
+	<div class="comments">
+		<ul>
+			{{#each comments}}
+				{{> commentItem}}
+			{{/each}}
+		</ul>
+	</div>
+	<div class="comment input-group">
+	  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-image fa-lg"></i></span>
+	  <input type="text" class="form-control" placeholder="comment..." aria-describedby="basic-addon1">
+	</div>
+</template>	
